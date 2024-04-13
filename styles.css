@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(234, 247, 239) ;
+}
+
+header , main , .header-nav{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: rgb(3, 55, 25);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo img{
+    width: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-nav button{
+    border: 2px solid rgb(6, 147, 65);
+    padding: 5px 30px;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header-nav button:hover{
+   background-color: rgb(6, 147, 65);
+   border: none;
+   color: white;
+}
+
+.header-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    margin-top: 8rem;
+}
+
+.header-info img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    filter: contrast(2);
+    /* padding: 1rem; */
+    transform: scale(1.1);
+    border: 15px double rgb(4, 101, 31);
+    background-color: rgb(9, 16, 9);
+}
+
+.header-info .data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex-basis: 22%;
+}
+
+.header-info .data span{
+    color: rgb(4, 101, 31);
+}
+
+.header-info .data h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header-info .data p{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.header-info .data button{
+    width: 50%;
+    padding: 10px 25px;
+    font-size: 0.7rem;
+    background-color: rgb(4, 101, 31);
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.first-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.first-section img{
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+.first-section .food-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* flex-basis: 40%; */
+    padding: 1rem 2rem;
+    width: 20rem;
+    position: relative;
+    right: 2rem;
+    background-color: rgb(234, 247, 239);
+    color: rgb(3, 55, 25);
+}
+
+.first-section .food-info h2{
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2; 
+}
+
+.first-section .food-info p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 70%;
+}
+
+.first-section .food-info button{
+    cursor: pointer;
+    border: none;
+    font-size: 0.6rem;
+    padding: 5px 20px;
+    background-color: rgb(6, 147, 65);
+    color: white;
+    border-radius: 18px;
+    align-self: center;
+}
+
+.first-section .food-info button:hover{
+    background-color: rgb(234, 247, 239);
+    color: black;
+    border: 2px solid rgb(6, 147, 65);
+}
+
+.section-seacond{
+    margin-top: 2rem;
+}
+
+.section-seacond h3 {
+    text-align: center;
+    font-weight: 600;
+    color: rgb(3, 55, 25);
+}
+
+.items-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.item img {
+    width: 50px;
+    cursor: pointer;
+    border: 2px solid rgb(6, 147, 65);
+    padding: 0.8rem;
+    border-radius: 20px 20px 2px 20px;
+}
+
+.item p{
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.item img:hover{
+       border: none;
+        background-color: rgb(6, 147, 65);
+        border-radius: 20px 20px 2px 20px;
+}
+
+.section-third {
+    margin-top: 2rem;
+}
+
+.section-third h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: rgb(3, 55, 25);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.menus-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 1rem;
+    place-items: center;
+}
+
+.menu{
+    background-color: rgb(4, 101, 31);
+    text-align: center;
+    color: white;
+}
+
+.star i{
+    color: rgba(255, 255, 0, 0.881);
+}
+
+.menu img{
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgb(15, 16, 48);
+    height: 80px;
+    margin: 1rem auto;
+    margin-bottom: auto;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+}
+
+.social i , p{
+    cursor: pointer;
+}
+
+.social i:hover{
+    color: rgb(6, 147, 65);
+    text-decoration: underline;
+}
+@media(max-width:768px){
+    .header-info{
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+       
+    }
+
+    .header-info img{
+        transform: none;
+        border: none;
+       width: 300px;
+       height: 250px;
+       border-radius: 50%;
+       object-fit: cover;
+       max-width: 100%;
+
+    }
+
+    .header-info .data , button{
+        text-align: center;
+        margin: auto;
+    }
+
+    .first-section{
+        flex-direction: column-reverse;
+    }
+
+    .first-section .food-info{
+        position: static;
+    }
+
+    .items-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       place-items: center;
+       
+        gap: 1rem;
+    }
+
+    .items-info p{
+        text-align: left;
+    }
+
+   .menus-info{
+        grid-template-columns: 1fr 1fr;
+   }
+
+}
+
+@media (max-width:569px){
+    .header-nav{
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .menus-info{
+    grid-template-columns: 1fr;
+    margin: auto 1rem;
+}
+}
+
+@media(max-width:487px){
+    .header-nav{
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .header-info{
+        margin-top: 15rem;
+    }
+
+
+    h1{
+        font-size: 1rem;
+    }
+}
